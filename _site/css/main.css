@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #111;
-  background-color: #39354f;
+  background-color: #39354f !important;
   -webkit-text-size-adjust: 100%; }
 
 /**
