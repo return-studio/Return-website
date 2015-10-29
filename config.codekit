@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/img\/return-logo-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5210,
+		"inputAbbreviatedPath": "\/css\/img\/return-logo-min.png",
+		"outputAbbreviatedPath": "\/css\/img\/return-logo-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
