@@ -1,0 +1,28 @@
+body {
+  background-color: #39354f; }
+
+p {
+  font-family: "Karla", sans-serif;
+  color: rgba(255, 255, 255, 0.35); }
+
+a {
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: none; }
+
+.logo {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  margin-left: -200px; }
+
+.contact {
+  position: absolute;
+  bottom: 20px;
+  left: 30px; }
+
+.website {
+  position: absolute;
+  bottom: 20px;
+  right: 30px; }
