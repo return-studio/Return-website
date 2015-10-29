@@ -1,4 +1,6 @@
 $r-purple: #39354f
+$mob: "(min-width: 0px) and (max-width: 768px)"
+
 
 body
 	background-color: $r-purple
@@ -10,7 +12,7 @@ p
 a
 	color: rgba(255, 255, 255, 0.55)
 	text-transform: none
-	
+
 
 .logo
 	width: 400px
@@ -19,13 +21,24 @@ a
 	left: 50%
 	top: 32%
 	margin-left: -200px
+	@media #{$mob}
+		width: 80%
+		left: 10%
+		margin-left: 0
+		top: 28%
+	
 
 .contact
 	position: absolute
 	bottom: 20px
 	left: 30px
+	@media #{$mob}
+		bottom: 50px
 
 .website
 	position: absolute
 	bottom: 20px
 	right: 30px
+	@media #{$mob}
+		right: auto
+		left: 30px

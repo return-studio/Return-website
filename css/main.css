@@ -16,13 +16,26 @@ a {
   left: 50%;
   top: 32%;
   margin-left: -200px; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .logo {
+      width: 80%;
+      left: 10%;
+      margin-left: 0;
+      top: 28%; } }
 
 .contact {
   position: absolute;
   bottom: 20px;
   left: 30px; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .contact {
+      bottom: 50px; } }
 
 .website {
   position: absolute;
   bottom: 20px;
   right: 30px; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .website {
+      right: auto;
+      left: 30px; } }
