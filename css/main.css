@@ -16,7 +16,7 @@ a {
   left: 50%;
   top: 32%;
   margin-left: -200px; }
-  @media only screen and (min-width: 0px) and (max-width: 600px) {
+  @media handheld, screen and (max-width: 600px) {
     .logo {
       width: 80%;
       left: 10%;
@@ -27,7 +27,7 @@ a {
   position: absolute;
   bottom: 20px;
   left: 30px; }
-  @media only screen and (min-width: 0px) and (max-width: 600px) {
+  @media handheld, screen and (max-width: 600px) {
     .contact {
       bottom: 50px; } }
 
@@ -35,7 +35,7 @@ a {
   position: absolute;
   bottom: 20px;
   right: 30px; }
-  @media only screen and (min-width: 0px) and (max-width: 600px) {
+  @media handheld, screen and (max-width: 600px) {
     .website {
       right: auto;
       left: 30px; } }
