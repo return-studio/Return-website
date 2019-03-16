@@ -324,6 +324,10 @@ header {
       padding: 0 65px;
       margin: 40px 0 40px 0;
       letter-spacing: -1px;
+      a {
+        color: $purple;
+        text-decoration: none;
+      }
     }
     h2 {
       // text-align: center;

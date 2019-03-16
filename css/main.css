@@ -257,6 +257,9 @@ header {
     padding: 0 65px;
     margin: 40px 0 40px 0;
     letter-spacing: -1px; }
+    .section-3 .max-width h3 a {
+      color: #8A28FC;
+      text-decoration: none; }
   .section-3 .max-width h2 {
     font-size: 80px;
     color: #fff;
