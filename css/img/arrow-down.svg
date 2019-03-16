@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-13257.578 -1558.578 47.156 47.156">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_6" data-name="Group 6" transform="translate(-14179.578 -2236.578)">
+    <g id="Ellipse_8" data-name="Ellipse 8" class="cls-1" transform="translate(922 678)">
+      <circle class="cls-2" cx="23.578" cy="23.578" r="23.578"/>
+      <circle class="cls-3" cx="23.578" cy="23.578" r="22.578"/>
+    </g>
+    <path id="Path_17" data-name="Path 17" class="cls-1" d="M-13245.844-1605l10.168,10.168,10.169-10.168" transform="translate(14181.446 2302.648)"/>
+  </g>
+</svg>

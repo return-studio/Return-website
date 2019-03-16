@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-13583 -476 301 287">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #8a28fc;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 5px;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #2aebd5;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_22" data-name="Group 22" transform="translate(-14194 -2322)">
+    <rect id="Rectangle_58" data-name="Rectangle 58" class="cls-1" width="301" height="287" transform="translate(611 1846)"/>
+    <g id="Group_15" data-name="Group 15" transform="translate(29.673 6.865)">
+      <path id="Path_32" data-name="Path 32" class="cls-2" d="M57.518,2.5V57.518H2.5Z" transform="translate(699.007 1951.876)"/>
+      <g id="Ellipse_12" data-name="Ellipse 12" class="cls-3" transform="translate(625 1949)">
+        <ellipse class="cls-5" cx="32.841" cy="32.841" rx="32.841" ry="32.841"/>
+        <ellipse class="cls-6" cx="32.841" cy="32.841" rx="30.341" ry="30.341"/>
+      </g>
+      <path id="Path_33" data-name="Path 33" class="cls-4" d="M47.611,0,63.5,27.5,47.611,54.962H15.842L0,27.5,15.842,0Z" transform="translate(778.428 1954.376)"/>
+    </g>
+  </g>
+</svg>

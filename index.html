@@ -5,20 +5,232 @@
 	<link rel="icon" type="img/ico" href="css/img/return-logo-min.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/csswizardry-grids@2.2.0/csswizardry-grids.scss">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ModifiersPlugin.min.js"></script>
 </head>
 <body>
-
-<div class="logo">
-  <img class="animated fadeInDown delay-zero-five" src="css/img/return.svg"/>
-</div>
-<div class="contact animated fadeInDown delay-one">
-	<p>For enquiries, email: <a href="mailto:studio.return@gmail.com?subject=Hey there">studio.return@gmail.com</a></p>
-</div>
-<div class="website animated fadeInDown delay-one">
-	<p>Website coming soon</p>
-</div>
-
-
+	<header class="animated slideInDown delay-one-five">
+		<a id="logo" href="#">
+			<img src="css/img/return-logo.svg" alt="">
+		</a>
+		<nav>
+			<ul>
+				<li>How we can help</li>
+				<li>Our services</li>
+				<!-- <li>Packages</li> -->
+				<li><a class="c-btn" href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="hero-container">
+		  <div class="handle" id="handle-1">
+				<!-- <img class="handle-single handle-sharp" src="css/img/handle-y.png" alt=""> -->
+				<img class="handle-single handle-blur" src="css/img/handle-y-blur.png" alt="">
+			</div>
+			<div class="handle" id="handle-2">
+				<!-- <img class="handle-single handle-sharp" src="css/img/handle-g.png" alt=""> -->
+				<img class="handle-single handle-blur" src="css/img/handle-g-blur.png" alt="">
+			</div>
+			<div class="handle" id="handle-3">
+				<!-- <img class="handle-single handle-sharp" src="css/img/handle-o.png" alt=""> -->
+				<img class="handle-single handle-blur" src="css/img/handle-o-blur.png" alt="">
+			</div>
+		</div>
+		<div class="hero-center">
+			<div class="inner">
+				<img class="animated fadeIn delay-one" src="css/img/return-logo.svg" alt="">
+				<h1>Achieve your <br>optimum.</h1>
+			</div>
+		</div>
+		<img class="arrow-down animated fadeInUp delay-two-five" src="css/img/arrow-down.svg" alt="">
+	</section>
+	<section class="section-1">
+		<div class="skew"></div>
+		<div class="max-width">
+			<h2>We’re passionate about crafting digital experiences that make an impact.</h2>
+		</div>
+	</section>
+	<section class="section-2">
+		<div class="skew"></div>
+		<div class="max-width">
+			<div class="services">
+				<div class="service-item">
+					<h3>Brand Conception</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>Art Direction</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>User Experience</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>User Interface</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>Web Design &amp; Build</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>Email Campaigns</h3>
+				</div><!--
+				--><div class="service-item">
+					<h3>Print Design</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-3">
+		<div class="skew"></div>
+		<div class="max-width">
+			<h3>Let's talk</h3>
+			<h2>Email us today to get the most out of your digital offering</h2>
+			<h3>hi@return.co.uk</h3>
+		</div>
+	</section>
 </body>
 </html>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		var handle1 = function(){
+			//dot movement
+			var dot = document.querySelector("#handle-1"),
+	    container = document.querySelector(".hero-container"),
+	    dotBounds = dot.getBoundingClientRect(),
+	    containerBounds = container.getBoundingClientRect(),
+	    xMax = containerBounds.right - dotBounds.right,
+	    xMin = containerBounds.left - dotBounds.left,
+	    yMax = containerBounds.bottom - dotBounds.bottom,
+	    yMin = containerBounds.top - dotBounds.top;
+
+			var t1 = TweenMax.to("#handle-1", 300, {x:3000, y:2000, rotation: 360, ease:Linear.easeNone, modifiers:{
+			  x:bounceModifier(xMin, xMax),
+			  y:bounceModifier(yMin, yMax)
+			}});
+
+			function bounceModifier(min, max) {
+			  var range = max - min;
+			  return function(value) {
+			    var cycle, clippedValue;
+			    if (value > max) {
+			      cycle = (value - max) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? min + clippedValue : max - clippedValue;
+			    } else if (value < min) {
+			      cycle = (min - value) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? max - clippedValue : min + clippedValue;
+			    }
+			    return value;
+			  }
+			}
+		}
+		var handle2 = function(){
+			//dot movement
+			var dot = document.querySelector("#handle-2"),
+	    container = document.querySelector(".hero-container"),
+	    dotBounds = dot.getBoundingClientRect(),
+	    containerBounds = container.getBoundingClientRect(),
+	    xMax = containerBounds.right - dotBounds.right,
+	    xMin = containerBounds.left - dotBounds.left,
+	    yMax = containerBounds.bottom - dotBounds.bottom,
+	    yMin = containerBounds.top - dotBounds.top;
+
+			var t1 = TweenMax.to("#handle-2", 300, {x:3000, y:2000, rotation: 360, ease:Linear.easeNone, modifiers:{
+			  x:bounceModifier(xMin, xMax),
+			  y:bounceModifier(yMin, yMax)
+			}});
+
+			function bounceModifier(min, max) {
+			  var range = max - min;
+			  return function(value) {
+			    var cycle, clippedValue;
+			    if (value > max) {
+			      cycle = (value - max) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? min + clippedValue : max - clippedValue;
+			    } else if (value < min) {
+			      cycle = (min - value) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? max - clippedValue : min + clippedValue;
+			    }
+			    return value;
+			  }
+			}
+		}
+		var handle3 = function(){
+			//dot movement
+			var dot = document.querySelector("#handle-3"),
+	    container = document.querySelector(".hero-container"),
+	    dotBounds = dot.getBoundingClientRect(),
+	    containerBounds = container.getBoundingClientRect(),
+	    xMax = containerBounds.right - dotBounds.right,
+	    xMin = containerBounds.left - dotBounds.left,
+	    yMax = containerBounds.bottom - dotBounds.bottom,
+	    yMin = containerBounds.top - dotBounds.top;
+
+			var t1 = TweenMax.to("#handle-3", 300, {x:3000, y:2000, rotation: 360, ease:Linear.easeNone, modifiers:{
+			  x:bounceModifier(xMin, xMax),
+			  y:bounceModifier(yMin, yMax)
+			}});
+
+			function bounceModifier(min, max) {
+			  var range = max - min;
+			  return function(value) {
+			    var cycle, clippedValue;
+			    if (value > max) {
+			      cycle = (value - max) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? min + clippedValue : max - clippedValue;
+			    } else if (value < min) {
+			      cycle = (min - value) / range;
+			      clippedValue = (cycle % 1) * range;
+			      value = ((cycle | 0) & 1 !== 0) ? max - clippedValue : min + clippedValue;
+			    }
+			    return value;
+			  }
+			}
+		}
+
+		handle1();
+		handle2();
+		handle3();
+
+		$(".handle-blur").hide();
+		setTimeout(function(){
+			$(".handle-blur").fadeIn(600);
+			$(".handle-sharp").fadeOut(600);
+		},300);
+
+		TweenMax.to(".hero-center .inner img", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
+		TweenMax.to(".hero-center .inner h1", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
+
+		// var move = setTimeout(function(){
+		// 	$('.hero-center .inner img').css({'top':'-300px'});
+		// 	$('.hero-center .inner h1').css({'top':'-300px'});
+		// 	$('.hero-center').css({'height':'100%'});
+		// },1500);
+		//
+		// console.log(move)
+
+		//
+
+		$(window).on("scroll", function() {
+	    var scrollPos = $(window).scrollTop();
+	    if (scrollPos <= 0) {
+	      $("header").css({'background':'none', 'padding':'30px 40px'});
+				$("#logo").css({'height':'50px', 'top':'0'});
+	    } else {
+	      $("header").css({'background':'rgba(138, 40, 252, 0.95)', 'padding':'10px 40px'});
+				$("#logo").css({'height':'25px', 'top':'15px'});
+	    }
+	});
+
+	});
+
+</script>
