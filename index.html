@@ -3,9 +3,9 @@
 	<title>Return</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="icon" type="img/ico" href="css/img/return-logo-min.png">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/csswizardry-grids@2.2.0/csswizardry-grids.scss">
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -50,41 +50,50 @@
 	</section>
 	<section class="section-1">
 		<div class="skew"></div>
-		<div class="max-width">
+		<div class="container">
 			<h2>We’re passionate about crafting digital experiences that make an impact.</h2>
 		</div>
 	</section>
 	<section class="section-2">
 		<div class="skew"></div>
-		<div class="max-width">
-			<div class="services">
-				<div class="service-item">
-					<h3>Brand Conception</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>Art Direction</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>User Experience</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>User Interface</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>Web Design &amp; Build</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>Email Campaigns</h3>
-				</div><!--
-				--><div class="service-item">
-					<h3>Print Design</h3>
+		<div class="services">
+			<div class="container">
+				<div class="row">
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-brand.svg" alt="">
+						<h3>Brand Conception</h3>
+					</div>
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-ad.svg" alt="">
+						<h3>Art Direction</h3>
+					</div>
+						<div class="service-item col-12 col-sm-6 col-lg-3">
+							<img src="css/img/s-ux.svg" alt="">
+						<h3>User Experience</h3>
+					</div>
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-ui.svg" alt="">
+						<h3>User Interface</h3>
+					</div>
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-web.svg" alt="">
+						<h3>Web Design &amp; Build</h3>
+					</div>
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-email.svg" alt="">
+						<h3>Email Campaigns</h3>
+					</div>
+					<div class="service-item col-12 col-sm-6 col-lg-3">
+						<img src="css/img/s-print.svg" alt="">
+						<h3>Print Design</h3>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="section-3">
 		<div class="skew"></div>
-		<div class="max-width">
+		<div class="container">
 			<h3>Let's talk</h3>
 			<h2>Email us today to get the most out of your digital offering</h2>
 			<h3><a href="mailto:hi@returnstudio.co.uk?subject=Hey there">hi@returnstudio.co.uk</a></h3>
@@ -207,29 +216,27 @@
 			$(".handle-sharp").fadeOut(600);
 		},300);
 
-		TweenMax.to(".hero-center .inner img", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
-		TweenMax.to(".hero-center .inner h1", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
 
-		// var move = setTimeout(function(){
-		// 	$('.hero-center .inner img').css({'top':'-300px'});
-		// 	$('.hero-center .inner h1').css({'top':'-300px'});
-		// 	$('.hero-center').css({'height':'100%'});
-		// },1500);
-		//
-		// console.log(move)
+		function checkPosition() {
+	    if (window.matchMedia('(min-width: 767px)').matches) {
+				TweenMax.to(".hero-center .inner img", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
+				TweenMax.to(".hero-center .inner h1", 0.1, {delay: 2.5, y: -300, ease: Power4.easeOut});
 
-		//
-
-		$(window).on("scroll", function() {
-	    var scrollPos = $(window).scrollTop();
-	    if (scrollPos <= 0) {
-	      $("header").css({'background':'none', 'padding':'30px 40px'});
-				$("#logo").css({'height':'50px', 'top':'0'});
+				$(window).on("scroll", function() {
+			    var scrollPos = $(window).scrollTop();
+			    if (scrollPos <= 0) {
+			      $("header").css({'background':'none', 'padding':'30px 40px'});
+						$("#logo").css({'height':'50px', 'top':'0'});
+			    } else {
+			      $("header").css({'background':'rgba(138, 40, 252, 0.95)', 'padding':'20px 40px'});
+						$("#logo").css({'height':'25px', 'top':'2px'});
+			    }
+				});
 	    } else {
-	      $("header").css({'background':'rgba(138, 40, 252, 0.95)', 'padding':'10px 40px'});
-				$("#logo").css({'height':'25px', 'top':'15px'});
 	    }
-	});
+		}
+
+		checkPosition();
 
 	});
 
