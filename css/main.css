@@ -233,7 +233,8 @@ header {
   padding: 50px 0 200px 0; }
   @media (max-width: 575.98px) {
     .section-1 {
-      padding: 10px 0 70px 0; } }
+      padding: 10px 0 160px 0;
+      min-height: auto; } }
   .section-1 .skew {
     background: #f5f3f3; }
   .section-1 .container h2 {

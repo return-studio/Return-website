@@ -270,7 +270,8 @@ header {
   margin-top: 20px;
   padding: 50px 0 200px 0;
   @media (max-width: 575.98px) {
-    padding: 10px 0 70px 0;
+    padding: 10px 0 160px 0;
+    min-height: auto;
   }
   .skew {
     background: #f5f3f3;
