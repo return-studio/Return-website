@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  background: #8A28FC; }
+  background: #8A28FC;
+  line-height: 1.4; }
 
 @media (max-width: 575.98px) {
   .container {
