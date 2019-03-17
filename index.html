@@ -18,10 +18,10 @@
 		</a>
 		<nav>
 			<ul>
-				<li>How we can help</li>
-				<li>Our services</li>
+				<li><a class="link-1" href="#">How we can help</a></li>
+				<li><a class="link-2" href="#">Our services</a></li>
 				<!-- <li>Packages</li> -->
-				<li><a class="c-btn" href="#">Contact</a></li>
+				<li><a class="c-btn" href="mailto:hi@returnstudio.co.uk?subject=Hey there">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -216,6 +216,16 @@
 			$(".handle-sharp").fadeOut(600);
 		},300);
 
+		$('.link-1').on('click', function(){
+        $('html, body').animate({
+            scrollTop: $('.section-1').offset().top - 150
+        }, 500);
+    });
+		$('.link-2').on('click', function(){
+        $('html, body').animate({
+            scrollTop: $('.section-2').offset().top - 150
+        }, 500);
+    });
 
 		function checkPosition() {
 	    if (window.matchMedia('(min-width: 767px)').matches) {

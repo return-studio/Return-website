@@ -80,7 +80,10 @@ header {
         font-weight: 700; }
         header nav ul li a {
           text-decoration: none;
-          font-weight: 700; }
+          font-weight: 700;
+          color: #fff; }
+          header nav ul li a:hover {
+            color: #fff; }
         header nav ul li .c-btn {
           padding: 15px 50px;
           background: #2AEBD5;

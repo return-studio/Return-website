@@ -93,6 +93,10 @@ header {
         a {
           text-decoration: none;
           font-weight: 700;
+          color: #fff;
+          &:hover {
+            color: #fff;
+          }
         }
         .c-btn {
           padding: 15px 50px;
