@@ -236,6 +236,10 @@
 	    }
 		}
 
+		$(window).on("resize", function() {
+			checkPosition();
+		});
+
 		checkPosition();
 
 	});
